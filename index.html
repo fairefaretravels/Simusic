@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SENSTACK Life Sim</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <h1>⚡ SENSTACK SIM</h1>
+    <span id="day">Day 1</span>
+  </div>
+
+  <!-- MAIN GRID -->
+  <div class="grid">
+
+    <!-- LEFT PANEL -->
+    <div class="panel stats">
+      <h2>Player</h2>
+      <p>Energy <span id="energy">100</span></p>
+      <p>Money $<span id="money">50</span></p>
+      <p>Fame <span id="fame">0</span></p>
+    </div>
+
+    <!-- CENTER -->
+    <div class="panel center">
+      <h2>Studio</h2>
+      <p>Coming soon: Room system</p>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="panel log" id="log"></div>
+
+  </div>
+
+  <!-- ACTION BAR -->
+  <div class="actions">
+    <button onclick="sleep()">Sleep</button>
+    <button onclick="eat()">Eat</button>
+    <button onclick="record()">Record</button>
+    <button onclick="post()">Post</button>
+    <button onclick="perform()">Perform</button>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
